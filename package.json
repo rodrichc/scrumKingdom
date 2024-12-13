@@ -1,0 +1,29 @@
+{
+  "name": "scrumkingdom",
+  "version": "1.0.0",
+  "description": "Herramienta de estimación de tareas Scrum",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrichc/scrumKingdom.git"
+  },
+  "keywords": [
+    "Scrum",
+    "Herramienta"
+  ],
+  "author": "Alejandro Corvalan y Rodrigo Chavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrichc/scrumKingdom/issues"
+  },
+  "homepage": "https://github.com/rodrichc/scrumKingdom#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.83.0"
+  }
+}
