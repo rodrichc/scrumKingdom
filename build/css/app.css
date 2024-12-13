@@ -407,7 +407,8 @@ body > section {
   justify-content: center;
   gap: 1.8rem;
   background-color: #FFFFFF;
-  padding: 1.7rem 4.2rem;
+  color: #0B192C;
+  padding: 1.7rem 2.7rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
 }
 .header-boton-registro img {
