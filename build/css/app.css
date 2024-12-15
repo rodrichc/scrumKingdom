@@ -377,19 +377,29 @@ body > section {
 
 .header {
   box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
 }
 .header-imagen {
   height: 11.4rem;
   width: auto;
   padding: 2rem;
 }
-.header-botones {
-  display: flex;
-  margin: 3rem;
-  align-items: center;
-  gap: 2rem;
+@media (min-width: 768px) {
+  .header-botones {
+    display: flex;
+    margin: 3rem;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 .header-boton-registro, .header-boton-tablero {
+  display: flex;
+  justify-content: center;
   font-size: 2rem;
   font-weight: 700;
   border-radius: 5rem;
@@ -402,22 +412,28 @@ body > section {
   padding: 2rem 4rem;
 }
 .header-boton-registro {
-  display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1.8rem;
   background-color: #FFFFFF;
   color: #0B192C;
   padding: 1.7rem 2.7rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .header-boton-registro {
+    margin: 0;
+  }
 }
 .header-boton-registro img {
   display: inline-block;
   width: 3rem;
 }
 
-.contenido-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  .contenido-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=app.css.map */
