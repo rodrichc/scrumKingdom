@@ -2,8 +2,9 @@
 @use '../base/mixins' as m;
 
 .header {
-    box-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem .7rem v.$grisSombra;
     padding: 2rem; 
+    background-color: v.$blanco;
 
     @include m.tablet {
         padding: 0;
@@ -32,6 +33,8 @@
         border-radius: 5rem;
         cursor: pointer;
         text-decoration: none;
+        box-shadow: 0 .5rem .5rem v.$grisSombra;
+        transition: all .2s ease-in-out;
     }
 
     &-boton-tablero {
@@ -42,22 +45,28 @@
 
     &-boton-registro {
         align-items: center;
-        gap: 1.8rem;
+        gap: 1rem;
         background-color: v.$blanco;
         color: v.$azulOscuro;
         padding: 1.7rem 2.7rem;
-        box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.8);
         margin-bottom: 2rem;
         @include m.tablet {
             margin: 0;
         }
     }
 
-    &-boton-registro img{
+    &-boton-registro svg{
         display: inline-block;
         width: 3rem;
     }
+
+    &-boton-registro:hover, &-boton-tablero:hover {
+        background-color: v.$gris;
+        color: v.$negro;
+    }
+    
 }
+
 
 .contenido-header {
     @include m.tablet {

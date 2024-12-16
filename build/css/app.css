@@ -325,6 +325,10 @@ body {
   font-style: normal;
   color: #000000;
   font-size: 2rem;
+  background-image: url(../../../src/img/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body.overflow-hidden {
   overflow: hidden;
@@ -376,8 +380,9 @@ body > section {
 }
 
 .header {
-  box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 0.7rem #BDB3B3;
   padding: 2rem;
+  background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .header {
@@ -405,6 +410,8 @@ body > section {
   border-radius: 5rem;
   cursor: pointer;
   text-decoration: none;
+  box-shadow: 0 0.5rem 0.5rem #BDB3B3;
+  transition: all 0.2s ease-in-out;
 }
 .header-boton-tablero {
   background-color: #1E3E62;
@@ -413,11 +420,10 @@ body > section {
 }
 .header-boton-registro {
   align-items: center;
-  gap: 1.8rem;
+  gap: 1rem;
   background-color: #FFFFFF;
   color: #0B192C;
   padding: 1.7rem 2.7rem;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
@@ -425,9 +431,13 @@ body > section {
     margin: 0;
   }
 }
-.header-boton-registro img {
+.header-boton-registro svg {
   display: inline-block;
   width: 3rem;
+}
+.header-boton-registro:hover, .header-boton-tablero:hover {
+  background-color: #E1E1E1;
+  color: #000000;
 }
 
 @media (min-width: 768px) {

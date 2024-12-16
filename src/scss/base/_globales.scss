@@ -16,6 +16,10 @@ body {
     font-style: normal;
     color: v.$negro;
     font-size: 2rem;
+    background-image: url(../../../src/img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     &.overflow-hidden {
         overflow: hidden;
