@@ -25,12 +25,15 @@
 
     img  {
         position: absolute; 
-        width: 25rem; 
+        width: 20rem;
         border-radius: 1rem; 
-        filter: drop-shadow(.4rem .8rem rgba(0, 0, 0, 0.3)); 
+        filter: drop-shadow(.4rem .8rem rgba(0, 0, 0, 0.3));
+        
+        @include m.tablet {
+            width: 25rem; 
+        }
     }
 
-    /* Posicionamiento y niveles individuales */
     .imagen-1 {
         top: 2rem;
         left: 12rem;
@@ -39,21 +42,48 @@
 
     .imagen-2 {
         top: 10rem;
-        left: 30rem;
+        left: 25rem;
         z-index: 2;
     }
 
     .imagen-3 {
-        top: 25rem;
-        left: 4rem;
+        top: 20rem;
+        left: 5rem;
         z-index: 3;
     }
 
     .imagen-4 {
-        top: 30rem;
-        left: 26rem;
+        top: 25rem;
+        left: 22rem;
         z-index: 4;
     }
+
+    @include m.tablet {
+        .imagen-1 {
+            top: 2rem;
+            left: 12rem;
+            z-index: 1;
+        }
+    
+        .imagen-2 {
+            top: 10rem;
+            left: 30rem;
+            z-index: 2;
+        }
+    
+        .imagen-3 {
+            top: 25rem;
+            left: 4rem;
+            z-index: 3;
+        }
+    
+        .imagen-4 {
+            top: 30rem;
+            left: 26rem;
+            z-index: 4;
+        }
+    }
+    
 }
 
 .texto-main {
