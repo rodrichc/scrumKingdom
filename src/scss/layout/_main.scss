@@ -1,0 +1,66 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.contenido-main {
+    padding: 6rem;
+    @include m.tablet {
+        @include m.grid(2, 10rem)
+    }
+}
+
+
+.imagenes-main {
+    position: relative; 
+
+    img  {
+        position: absolute; 
+        width: 25rem; 
+        border-radius: 1rem; 
+        filter: drop-shadow(.4rem .8rem rgba(0, 0, 0, 0.3)); 
+    }
+
+    /* Posicionamiento y niveles individuales */
+    .imagen-1 {
+        top: 2rem;
+        left: 12rem;
+        z-index: 1;
+    }
+
+    .imagen-2 {
+        top: 10rem;
+        left: 30rem;
+        z-index: 2;
+    }
+
+    .imagen-3 {
+        top: 25rem;
+        left: 4rem;
+        z-index: 3;
+    }
+
+    .imagen-4 {
+        top: 30rem;
+        left: 26rem;
+        z-index: 4;
+    }
+}
+
+.texto-main {
+    padding-top: 12rem;
+    margin-bottom: 2rem;
+    h1 {
+        font-size: 5rem;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 3rem;
+        padding-right: 8rem;
+    }
+
+    a {
+        margin-right: 22rem;
+    }
+}
