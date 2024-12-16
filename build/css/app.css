@@ -438,20 +438,30 @@ body > section {
   }
 }
 
-.contenido-main {
-  padding: 6rem;
-}
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .contenido-main {
+    padding: 6rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
+    gap: 8rem;
   }
 }
 
 .imagenes-main {
   position: relative;
+  width: 30rem;
+  height: 40rem;
   /* Posicionamiento y niveles individuales */
+}
+@media (min-width: 768px) {
+  .imagenes-main {
+    margin-left: 20rem;
+  }
+}
+@media (min-width: 1200px) {
+  .imagenes-main {
+    margin-left: 0;
+  }
 }
 .imagenes-main img {
   position: absolute;
@@ -493,6 +503,8 @@ body > section {
   font-size: 3rem;
   padding-right: 8rem;
 }
-.texto-main a {
-  margin-right: 22rem;
+@media (min-width: 1200px) {
+  .texto-main a {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=app.css.map */

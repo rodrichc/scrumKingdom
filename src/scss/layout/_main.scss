@@ -3,15 +3,25 @@
 
 
 .contenido-main {
-    padding: 6rem;
-    @include m.tablet {
-        @include m.grid(2, 10rem)
+    @include m.desktop {
+        padding: 6rem;
+        @include m.grid(2, 8rem)
     }
 }
 
 
 .imagenes-main {
     position: relative; 
+    width: 30rem;
+    height: 40rem;
+
+    @include m.tablet {
+        margin-left: 20rem;
+    }
+
+    @include m.desktop {
+        margin-left: 0;
+    }
 
     img  {
         position: absolute; 
@@ -61,6 +71,8 @@
     }
 
     a {
-        margin-right: 22rem;
+        @include m.desktop {
+            display: inline-block;
+        }
     }
 }
