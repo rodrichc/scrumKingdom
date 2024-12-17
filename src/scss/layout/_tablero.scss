@@ -1,0 +1,59 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+  
+  .contenedor-tablero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25rem;
+  }
+  
+  .contenido-tablero {
+    background: white;
+    border-radius: 5rem;
+    box-shadow: 0 .8rem .8rem v.$negro;
+    padding: 3rem 2rem;
+    width: 65rem;
+    height: 44rem;
+    text-align: center;
+
+    img {
+        width: 9rem;
+        height: 6rem;
+        margin: 0 auto;
+    }
+  }
+  
+  
+  .tablero-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+
+    label {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+        color: v.$negro;
+        font-weight: 500;
+      }
+
+      input {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border: .3rem solid v.$gris;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+      }
+      
+      input:focus {
+        outline: none;
+        border-color: v.$azul;
+      }
+     
+      button {
+        margin-top: 3rem;
+      }
+  }
